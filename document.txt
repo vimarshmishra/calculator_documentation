@@ -1,0 +1,26 @@
+Variable Declaration and Input:
+
+char op;: Declares a variable op to store the arithmetic operator (+, -, *, /).
+float num1, num2;: Declares variables num1 and num2 to store the operands.
+User Interaction:
+
+cout << "Enter an arithmetic operator (+, -, *, /): ";: Prompts the user to enter an arithmetic operator.
+cin >> op;: Reads the operator input from the user.
+cout << "Enter two numbers as operands: ";: Prompts the user to enter two numbers.
+cin >> num1 >> num2;: Reads the operands input from the user.
+Switch Statement (switch(op)):
+
+Determines which arithmetic operation to perform based on the value of op.
+Case Statements:
+
+Case '+': Adds num1 and num2 and prints the result.
+Case '-': Subtracts num2 from num1 and prints the result.
+Case '*': Multiplies num1 and num2 and prints the result.
+Case '/': Checks if num2 is not zero before dividing num1 by num2. If num2 is zero, prints an error message for division by zero.
+Default Case: Handles unsupported operators by printing an error message.
+Output:
+
+Each case in the switch statement outputs the operation being performed along with the result.
+Error Handling:
+
+The program checks for division by zero (num2 == 0) in the division case to avoid runtime errors.
